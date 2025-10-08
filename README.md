@@ -90,7 +90,7 @@ This website is automatically deployed to GitHub Pages. Any changes pushed to th
 ## 📞 Contact
 
 - **Email**: gammasoftware0@gmail.com
-- **Privacy**: privacy@gammasoftware0@gmail.com
+- **Privacy**: gammasoftware0@gmail.com
 - **Company**: Gamma Software
 
 ## 📄 License
