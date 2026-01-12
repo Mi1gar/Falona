@@ -4,180 +4,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Falona | Profesyonel Astroloji ve Fal Analizi</title>
-    <meta name="description"
-        content="Modern teknoloji ve kadim bilgeliğin mükemmel uyumu. Profesyonel fal ve astroloji analizi.">
+    <title>Falona — Geleceğinizi Keşfedin</title>
+    <meta name="description" content="Modern teknolojiyle güçlendirilmiş profesyonel fal ve astroloji platformu.">
+    <link rel="icon" href="falcilogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="falcilogo.png">
-
-    <!-- Scroll Reveal Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-            // Navbar scroll effect
-            window.addEventListener('scroll', () => {
-                const nav = document.querySelector('.navbar');
-                if (window.scrollY > 50) nav.classList.add('scrolled');
-                else nav.classList.remove('scrolled');
-            });
-        });
-    </script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <img src="falcilogo.png" alt="Falona" class="logo">
-                    <span class="logo-text">FALONA</span>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-brand">
+                <img src="falcilogo.png" alt="Falona" class="nav-logo-img">
+                <span class="nav-logo-text">Falona</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Özellikler</a>
+                <a href="#technology">Teknoloji</a>
+                <a href="contact.html" class="nav-cta">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 0L10.5 5.5L16 8L10.5 10.5L8 16L5.5 10.5L0 8L5.5 5.5L8 0Z" fill="currentColor" />
+                </svg>
+                <span>Yeni Nesil Platform</span>
+            </div>
+            <h1 class="hero-title">
+                Geleceğinizi<br>
+                <span class="gradient-text">Profesyonelce</span> Keşfedin
+            </h1>
+            <p class="hero-lead">
+                Kadim bilgelik ve modern analiz araçlarının mükemmel birleşimi.<br>
+                Kahve falından astrolojiye, hayatınıza dair derinlemesine içgörüler.
+            </p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary">
+                    <span>Yakında Google Play'de</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#features" class="btn btn-ghost">Daha Fazla Bilgi</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <img src="falcilogo.png" alt="Falona App" class="hero-app-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="proof">
+        <div class="proof-item">
+            <div class="proof-value">Gizli</div>
+            <div class="proof-label">Tamamen Özel</div>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+            <div class="proof-value">7/24</div>
+            <div class="proof-label">Anlık Analiz</div>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+            <div class="proof-value">Pro</div>
+            <div class="proof-label">Detaylı Raporlar</div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>Kapsamlı Analiz Araçları</h2>
+            <p>Her biri özenle tasarlanmış, derinlemesine yorumlama için profesyonel araçlar.</p>
+        </div>
+
+        <div class="feature-grid">
+            <!-- Large Card: Coffee Reading -->
+            <div class="feature-card feature-large">
+                <div class="feature-icon">☕</div>
+                <h3>Kahve Falı Analizi</h3>
+                <p>Telvedeki şekilleri görüntü işleme teknolojisiyle tarar, binlerce sembol veritabanıyla eşleştirerek
+                    size en doğru yorumu sunarız.</p>
+                <div class="feature-meta">
+                    <span class="feature-tag">Görüntü İşleme</span>
+                    <span class="feature-tag">Sembol Tanıma</span>
                 </div>
-                <!-- Links removed for cleaner professional look on mobile, kept on desktop via CSS -->
-                <ul class="nav-menu">
-                    <li><a href="#features" class="nav-link">Özellikler</a></li>
-                    <li><a href="#premium" class="nav-link">Teknoloji</a></li>
-                    <li><a href="contact.html" class="btn-nav">İletişim</a></li>
+            </div>
+
+            <!-- Medium Cards -->
+            <div class="feature-card">
+                <div class="feature-icon">🃏</div>
+                <h3>Tarot Ritüeli</h3>
+                <p>78 kartlık Rider-Waite destesi ile bilinçaltı analizi.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✋</div>
+                <h3>El Çizgisi Okuma</h3>
+                <p>Hayat, akıl ve kalp çizgilerinizin yapısına göre karakter analizi.</p>
+            </div>
+
+            <!-- Tall Card: Astrology -->
+            <div class="feature-card feature-tall">
+                <div class="feature-icon">⭐</div>
+                <h3>Astrolojik Harita</h3>
+                <p>Doğum saatinize göre hesaplanan hassas yıldız haritası.</p>
+                <ul class="feature-list">
+                    <li>Günlük Burç Yorumu</li>
+                    <li>Gezegen Konumları</li>
+                    <li>Yükselen Burç</li>
+                    <li>Ev Sistemi Analizi</li>
                 </ul>
             </div>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-bg-glow"></div>
-            <div class="hero-container">
-                <div class="hero-content reveal">
-                    <div class="badge-pill">🚀 Yeni Nesil Analiz</div>
-                    <h1 class="hero-title">
-                        Geleceği <span class="text-gradient">Profesyonelce</span> <br> Yorumluyoruz.
-                    </h1>
-                    <p class="hero-lead">
-                        Falona, geleneksel yöntemleri modern veri analizi ile birleştirir.
-                        Kahve falından astrolojiye, her detayda derinlik ve doğruluk.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#" class="btn btn-primary-glow">
-                            Play Store'da İncele <span class="arrow">→</span>
-                        </a>
-                        <a href="#features" class="btn btn-text">
-                            Detaylı Bilgi
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual reveal">
-                    <!-- Abstract representation or App mockup would go here -->
-                    <div class="glass-card-mockup">
-                        <img src="falcilogo.png" alt="Falona Interface" class="app-screen">
-                    </div>
-                </div>
+            <!-- Remaining Cards -->
+            <div class="feature-card">
+                <div class="feature-icon">🌙</div>
+                <h3>Rüya Tabiri</h3>
+                <p>Sembollerin gizli mesajlarını çözümleyin.</p>
             </div>
-        </section>
 
-        <!-- Stats / Trust (Minimal) -->
-        <section class="stats-stripe reveal">
-            <div class="stat-item">
-                <span class="stat-val">7/24</span>
-                <span class="stat-lbl">Canlı Analiz</span>
+            <div class="feature-card">
+                <div class="feature-icon">🔢</div>
+                <h3>Numeroloji</h3>
+                <p>Sayıların gizli gücünü keşfedin.</p>
             </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-val">%100</span>
-                <span class="stat-lbl">Gizlilik</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-                <span class="stat-val">Pro</span>
-                <span class="stat-lbl">Detaylı Rapor</span>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Features Bento Grid -->
-        <section id="features" class="section-dark">
-            <div class="container">
-                <div class="section-header reveal">
-                    <h2>Kapsamlı Analiz Araçları</h2>
-                    <p>Tek bir platformda ihtiyacınız olan tüm mistik rehberlik hizmetleri.</p>
-                </div>
-
-                <div class="bento-grid">
-                    <!-- Large Feature: Coffee -->
-                    <div class="bento-item bento-large reveal">
-                        <div class="bento-content">
-                            <div class="bento-icon">☕</div>
-                            <h3>Kahve Falı Analizi</h3>
-                            <p>Gelişmiş görüntü işleme teknolojisi ile telve şekillerini tarar, sembolleri veri
-                                tabanındaki binlerce anlam ile eşleştirerek size en doğru yorumu sunar.</p>
-                        </div>
-                        <div class="bento-bg opacity-10"></div>
-                    </div>
-
-                    <!-- Tall Feature: Astrology -->
-                    <div class="bento-item bento-tall reveal">
-                        <div class="bento-content">
-                            <div class="bento-icon">⭐</div>
-                            <h3>Astrolojik <br>Harita</h3>
-                            <p>Doğum saatinize göre hesaplanan hassas yıldız haritası. Gezegensel hareketlerin kariyer,
-                                aşk ve sağlık üzerindeki anlık etkileri.</p>
-                            <ul class="feature-list">
-                                <li>Günlük Burç</li>
-                                <li>Gezegen Konumları</li>
-                                <li>Yükselen Burç</li>
-                            </ul>
+    <!-- Technology -->
+    <section id="technology" class="technology">
+        <div class="tech-content">
+            <div class="tech-text">
+                <h2>Modern Teknoloji,<br>Kadim Bilgelik</h2>
+                <p>Geleneksel yorumlama yöntemlerini modern veri analizi ile birleştiriyoruz. Her falınız, benzersiz
+                    profil bilgilerinize göre kişiselleştirilir.</p>
+                <div class="tech-features">
+                    <div class="tech-feature">
+                        <div class="tech-feature-icon">🔒</div>
+                        <div>
+                            <div class="tech-feature-title">Tam Gizlilik</div>
+                            <div class="tech-feature-desc">Verileriniz şifrelenir ve asla paylaşılmaz</div>
                         </div>
                     </div>
-
-                    <!-- Medium Feature: Tarot -->
-                    <div class="bento-item reveal">
-                        <div class="bento-icon">🃏</div>
-                        <h3>Tarot Ritüeli</h3>
-                        <p>78 kartlık Rider-Waite destesi ile bilinçaltı analizi. Kartların dizilimi ve ilişkisel
-                            yorumları.</p>
-                    </div>
-
-                    <!-- Medium Feature: Palmistry -->
-                    <div class="bento-item reveal">
-                        <div class="bento-icon">✋</div>
-                        <h3>El Çizgisi Okuma</h3>
-                        <p>Biyometrik el tarama sistemi. Hayat, Akıl ve Kalp çizgilerinizin yapısına göre karakter
-                            analizi.</p>
+                    <div class="tech-feature">
+                        <div class="tech-feature-icon">✨</div>
+                        <div>
+                            <div class="tech-feature-title">Kişiselleştirilmiş</div>
+                            <div class="tech-feature-desc">Size özel profil ve geçmiş analiziyle</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section reveal">
-            <div class="cta-container glass-panel">
-                <h2>Potansiyelinizi Keşfedin</h2>
-                <p>Falona ile kendinizi daha iyi tanıyın. Profesyonel analizler cebinizde.</p>
-                <a href="#" class="btn btn-primary-glow">Hemen Başlayın</a>
+            <div class="tech-visual">
+                <div class="tech-card">
+                    <div class="tech-card-header">
+                        <div class="tech-card-dot"></div>
+                        <div class="tech-card-dot"></div>
+                        <div class="tech-card-dot"></div>
+                    </div>
+                    <div class="tech-card-body">
+                        <div class="tech-code-line"></div>
+                        <div class="tech-code-line short"></div>
+                        <div class="tech-code-line"></div>
+                        <div class="tech-code-line medium"></div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <div class="container footer-cont">
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-inner">
+            <h2>Potansiyelinizi Keşfedin</h2>
+            <p>Falona ile kendinizi daha iyi tanıyın. Kişisel gelişiminize yeni bir boyut katın.</p>
+            <a href="#" class="btn btn-white">Hemen Başlayın</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
             <div class="footer-brand">
-                <h4>FALONA</h4>
-                <p>© 2026 Gamma Software. Tüm hakları saklıdır.</p>
+                <div class="footer-logo">Falona</div>
+                <p class="footer-tagline">Yapay Zeka Destekli Fal ve Astroloji</p>
             </div>
             <div class="footer-links">
                 <a href="privacy-policy.html">Gizlilik</a>
-                <a href="terms-of-service.html">Kullanım Şartları</a>
+                <a href="terms-of-service.html">Şartlar</a>
                 <a href="contact.html">İletişim</a>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Gamma Software. Tüm hakları saklıdır.</p>
+        </div>
     </footer>
+
+    <script>
+        // Smooth scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.feature-card, .tech-content, .cta-inner').forEach(el => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
