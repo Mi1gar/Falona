@@ -6,60 +6,44 @@
 }
 
 :root {
-    /* Premium Renk Paleti v2 - Daha Derin ve Mistik */
-    --primary-gradient: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
-    --secondary-gradient: linear-gradient(135deg, #FF6B6B 0%, #556270 100%);
-    /* Warm contrast */
-    --accent-gradient: linear-gradient(135deg, #F093FB 0%, #F5576C 100%);
-    --gold-gradient: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
-    --dark-surface: #0f172a;
-    --dark-surface-lighter: #1e293b;
+    /* Ultra-Professional Palette - Deep, Authoritative, Mystical */
+    --surface-dark: #0B0F19;
+    /* Almost black blue */
+    --surface-card: #151B2B;
+    --primary-accent: #6366f1;
+    /* Indigo */
+    --secondary-accent: #8b5cf6;
+    /* Violet */
+    --gold-accent: #F59E0B;
+    /* Subtle Amber */
 
-    /* Solid Colors */
-    --primary-color: #4338ca;
-    --secondary-color: #f472b6;
-    --accent-color: #38bdf8;
-    --text-dark: #1e293b;
-    --text-light: #64748b;
-    --text-white: #ffffff;
-    --background-light: #f8fafc;
-    --background-white: #ffffff;
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+    --gradient-glow: radial-gradient(circle at center, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    --gradient-text: linear-gradient(to right, #e2e8f0, #94a3b8);
+    --gradient-gold: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+
+    /* Text */
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    /* Spacing & Layout */
+    --container-width: 1200px;
+    --header-height: 80px;
 
     /* Effects */
-    --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.4);
-    --glass-bg: rgba(255, 255, 255, 0.7);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.5);
+    --glass-panel: rgba(255, 255, 255, 0.03);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.05);
+    --glow-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.15);
 
-    /* Typography */
-    --font-primary: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    /* Daha modern bir sans-serif */
-    --font-heading: 'Outfit', sans-serif;
-    /* Şık ve modern başlıklar */
-
-    /* Spacing */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 4rem;
-    --spacing-2xl: 6rem;
-    --spacing-3xl: 8rem;
-
-    --radius-lg: 1rem;
-    --radius-xl: 1.5rem;
-    --radius-2xl: 2.5rem;
-
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Animation */
+    --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 body {
-    font-family: var(--font-primary);
-    line-height: 1.7;
-    color: var(--text-dark);
     background: var(--background-white);
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -826,6 +810,7 @@ html {
         page-break-inside: avoid;
     }
 }
+
 /* New Sections added by Revamp */
 
 /* Trust Bar */
@@ -836,7 +821,7 @@ html {
     padding: var(--spacing-lg) 0;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     flex-wrap: wrap;
 }
 
@@ -878,7 +863,15 @@ html {
     animation: rotate 30s linear infinite;
 }
 
-@keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .premium-grid {
     display: grid;
@@ -957,4 +950,3 @@ html {
     margin: 0 auto var(--spacing-md);
     box-shadow: var(--shadow-glow);
 }
-

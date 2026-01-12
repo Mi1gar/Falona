@@ -4,13 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Falona - Mistik Yolculuk & Geleneksel Fal</title>
+    <title>Falona | Profesyonel Astroloji ve Fal Analizi</title>
     <meta name="description"
-        content="Falona, en kapsamlı fal yorumcusu. Kahve falı, Tarot, El falı, Astroloji ve Rüya tabirleri tek uygulamada. Size özel ve detaylı analizler.">
-    <meta name="keywords"
-        content="fal, tarot, astroloji, mistik fal, kahve falı, el falı, rüya tabiri, burç yorumları, kişisel gelişim">
+        content="Modern teknoloji ve kadim bilgeliğin mükemmel uyumu. Profesyonel fal ve astroloji analizi.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="falcilogo.png">
+
+    <!-- Scroll Reveal Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                const nav = document.querySelector('.navbar');
+                if (window.scrollY > 50) nav.classList.add('scrolled');
+                else nav.classList.remove('scrolled');
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -18,18 +38,14 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <img src="falcilogo.png" alt="Falona Logo" class="logo">
+                    <img src="falcilogo.png" alt="Falona" class="logo">
                     <span class="logo-text">FALONA</span>
                 </div>
+                <!-- Links removed for cleaner professional look on mobile, kept on desktop via CSS -->
                 <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
                     <li><a href="#features" class="nav-link">Özellikler</a></li>
-                    <li><a href="#premium" class="nav-link">Premium</a></li>
-                    <li><a href="contact.html" class="nav-link">İletişim</a></li>
-                    <li class="language-switcher">
-                        <span class="nav-link active">🇹🇷 TR</span>
-                        <a href="index-en.html" class="nav-link">🇺🇸 EN</a>
-                    </li>
+                    <li><a href="#premium" class="nav-link">Teknoloji</a></li>
+                    <li><a href="contact.html" class="btn-nav">İletişim</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,186 +53,131 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero">
+        <section class="hero">
+            <div class="hero-bg-glow"></div>
             <div class="hero-container">
-                <div class="hero-content">
-                    <div class="badge-new">✨ Mistik & Güvenilir</div>
-                    <h1 class="hero-title">Geleceğin Şifrelerini <br>Kadim Bilgilerle Çözün</h1>
-                    <p class="hero-description">
-                        Geleneksel fal bilgeliği, modern teknolojiyle buluştu.
-                        Tarot, Kahve Falı, El Falı ve Astroloji analizleri artık cebinizde.
-                        Size özel, şaşırtıcı derecede doğru ve derinlemesine yorumlar.
+                <div class="hero-content reveal">
+                    <div class="badge-pill">🚀 Yeni Nesil Analiz</div>
+                    <h1 class="hero-title">
+                        Geleceği <span class="text-gradient">Profesyonelce</span> <br> Yorumluyoruz.
+                    </h1>
+                    <p class="hero-lead">
+                        Falona, geleneksel yöntemleri modern veri analizi ile birleştirir.
+                        Kahve falından astrolojiye, her detayda derinlik ve doğruluk.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="https://play.google.com/store/apps/details?id=com.gammasoftware.falona"
-                            class="btn btn-primary">
-                            <span>🚀</span> Yakında Google Play'de
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary-glow">
+                            Play Store'da İncele <span class="arrow">→</span>
                         </a>
-                        <a href="#features" class="btn btn-secondary">
-                            <span>🔮</span> Özellikleri Keşfet
+                        <a href="#features" class="btn btn-text">
+                            Detaylı Bilgi
                         </a>
-                    </div>
-                    <div class="trust-badges">
-                        <span>🔒 %100 Gizlilik</span>
-                        <span>✨ Kişiselleştirilmiş</span>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="falcilogo.png" alt="Falona App Interface" class="app-preview">
+                <div class="hero-visual reveal">
+                    <!-- Abstract representation or App mockup would go here -->
+                    <div class="glass-card-mockup">
+                        <img src="falcilogo.png" alt="Falona Interface" class="app-screen">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Trust Stats (Honest Version) -->
-        <div class="trust-bar">
-            <div class="trust-item">
-                <span class="trust-number">Gizli</span>
-                <span class="trust-label">%100 Özel</span>
+        <!-- Stats / Trust (Minimal) -->
+        <section class="stats-stripe reveal">
+            <div class="stat-item">
+                <span class="stat-val">7/24</span>
+                <span class="stat-lbl">Canlı Analiz</span>
             </div>
-            <div class="trust-item">
-                <span class="trust-number">Detaylı</span>
-                <span class="trust-label">Kapsamlı Yorum</span>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-val">%100</span>
+                <span class="stat-lbl">Gizlilik</span>
             </div>
-            <div class="trust-item">
-                <span class="trust-number">7/24</span>
-                <span class="trust-label">Kesintisiz Analiz</span>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-val">Pro</span>
+                <span class="stat-lbl">Detaylı Rapor</span>
             </div>
-            <div class="trust-item">
-                <span class="trust-number">Modern</span>
-                <span class="trust-label">Gelişmiş Teknoloji</span>
-            </div>
-        </div>
+        </section>
 
-        <!-- Features Section -->
-        <section id="features" class="features">
+        <!-- Features Bento Grid -->
+        <section id="features" class="section-dark">
             <div class="container">
-                <h2 class="section-title">Neler Yapabiliriz?</h2>
-                <p style="text-align: center; color: var(--text-light); margin-bottom: 3rem;">Falona, sadece bir fal
-                    uygulaması değil; kişisel bir yaşam rehberidir.</p>
+                <div class="section-header reveal">
+                    <h2>Kapsamlı Analiz Araçları</h2>
+                    <p>Tek bir platformda ihtiyacınız olan tüm mistik rehberlik hizmetleri.</p>
+                </div>
 
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">☕</div>
-                        <h3>Kahve Falı</h3>
-                        <p>Fincanınızın ve tabağınızın fotoğraflarını çekin. Sistemimiz, telvelerdeki şekilleri yorumlar
-                            ve size özel, uzun bir analiz sunar.</p>
+                <div class="bento-grid">
+                    <!-- Large Feature: Coffee -->
+                    <div class="bento-item bento-large reveal">
+                        <div class="bento-content">
+                            <div class="bento-icon">☕</div>
+                            <h3>Kahve Falı Analizi</h3>
+                            <p>Gelişmiş görüntü işleme teknolojisi ile telve şekillerini tarar, sembolleri veri
+                                tabanındaki binlerce anlam ile eşleştirerek size en doğru yorumu sunar.</p>
+                        </div>
+                        <div class="bento-bg opacity-10"></div>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🃏</div>
+
+                    <!-- Tall Feature: Astrology -->
+                    <div class="bento-item bento-tall reveal">
+                        <div class="bento-content">
+                            <div class="bento-icon">⭐</div>
+                            <h3>Astrolojik <br>Harita</h3>
+                            <p>Doğum saatinize göre hesaplanan hassas yıldız haritası. Gezegensel hareketlerin kariyer,
+                                aşk ve sağlık üzerindeki anlık etkileri.</p>
+                            <ul class="feature-list">
+                                <li>Günlük Burç</li>
+                                <li>Gezegen Konumları</li>
+                                <li>Yükselen Burç</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Medium Feature: Tarot -->
+                    <div class="bento-item reveal">
+                        <div class="bento-icon">🃏</div>
                         <h3>Tarot Ritüeli</h3>
-                        <p>78 kartlık klasik Tarot destesinden kartlarınızı seçin. Aşk, kariyer veya genel durumunuz
-                            için kartların bilgeliğine danışın.</p>
+                        <p>78 kartlık Rider-Waite destesi ile bilinçaltı analizi. Kartların dizilimi ve ilişkisel
+                            yorumları.</p>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">✋</div>
-                        <h3>El Falı (Palmistry)</h3>
-                        <p>Avuç içi çizgileriniz karakteriniz hakkında ipuçları verir. El fotoğrafınızı tarayın, hayat,
-                            akıl ve kalp çizginizin analizini okuyun.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⭐</div>
-                        <h3>Astroloji & Burç</h3>
-                        <p>Doğum haritanıza göre kişiselleştirilmiş günlük, haftalık yorumlar. Gezegenlerin
-                            hareketlerinin sizin üzerinizdeki etkisini öğrenin.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🌙</div>
-                        <h3>Rüya Tabiri</h3>
-                        <p>Gördüğünüz rüyaları anlatın, mistik sembolleri ve gizli mesajları sizin için çözümleyelim.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔢</div>
-                        <h3>Numeroloji</h3>
-                        <p>İsminiz ve doğum tarihinizdeki sayıların gizli gücünü keşfedin. Yaşam yolu numaranız size
-                            neler söylüyor?</p>
+
+                    <!-- Medium Feature: Palmistry -->
+                    <div class="bento-item reveal">
+                        <div class="bento-icon">✋</div>
+                        <h3>El Çizgisi Okuma</h3>
+                        <p>Biyometrik el tarama sistemi. Hayat, Akıl ve Kalp çizgilerinizin yapısına göre karakter
+                            analizi.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Premium Showcase -->
-        <section id="premium" class="premium-showcase">
-            <div class="container">
-                <h2 class="section-title" style="color: white; background: none; -webkit-text-fill-color: white;">Falona
-                    Premium</h2>
-                <p style="text-align: center; color: rgba(255,255,255,0.7); margin-bottom: 3rem;">Sınırları kaldırın ve
-                    tam potansiyelinize ulaşın.</p>
-
-                <div class="premium-grid">
-                    <div class="premium-card">
-                        <div class="premium-icon">✨</div>
-                        <h3>Sınırsız Fal Hakkı</h3>
-                        <p>Günlük limitlere takılmadan dilediğiniz kadar fal baktırın.</p>
-                    </div>
-                    <div class="premium-card">
-                        <div class="premium-icon">🧠</div>
-                        <h3>Gelişmiş Falcı Sezgisi</h3>
-                        <p>En modern yorumlama teknolojisi ile çok daha derin, tutarlı ve şaşırtıcı yorumlar alın.</p>
-                    </div>
-                    <div class="premium-card">
-                        <div class="premium-icon">🚫</div>
-                        <h3>Reklamsız Deneyim</h3>
-                        <p>Hiçbir kesinti olmadan, sadece falınıza odaklanın.</p>
-                    </div>
-                    <div class="premium-card">
-                        <div class="premium-icon">💬</div>
-                        <h3>Kişisel Rehber</h3>
-                        <p>Sizi tanıyan ve geçmişinizi bilen özel asistanınızla sohbet edin.</p>
-                    </div>
-                </div>
-
-                <div style="text-align: center; margin-top: 4rem;">
-                    <a href="https://play.google.com/store/apps/details?id=com.gammasoftware.falona"
-                        class="btn btn-primary" style="background: var(--gold-gradient); color: #000;">
-                        Yakında Sizlerle
-                    </a>
-                </div>
+        <!-- CTA Section -->
+        <section class="cta-section reveal">
+            <div class="cta-container glass-panel">
+                <h2>Potansiyelinizi Keşfedin</h2>
+                <p>Falona ile kendinizi daha iyi tanıyın. Profesyonel analizler cebinizde.</p>
+                <a href="#" class="btn btn-primary-glow">Hemen Başlayın</a>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>FALONA</h3>
-                    <p>Yeni Nesil Fal Deneyimi</p>
-                    <div style="margin-top: 1rem;">
-                        <a href="#" style="font-size: 1.5rem; margin-right: 10px;">📸</a>
-                        <a href="#" style="font-size: 1.5rem;">🐦</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Keşfet</h4>
-                    <ul>
-                        <li><a href="#home">Ana Sayfa</a></li>
-                        <li><a href="#features">Özellikler</a></li>
-                        <li><a href="#premium">Premium</a></li>
-                        <li><a href="contact.html">İletişim</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Yasal</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html">Gizlilik Politikası</a></li>
-                        <li><a href="terms-of-service.html">Kullanım Şartları</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>İletişim</h4>
-                    <p>Gamma Software</p>
-                    <p>gammasoftware0@gmail.com</p>
-                </div>
+        <div class="container footer-cont">
+            <div class="footer-brand">
+                <h4>FALONA</h4>
+                <p>© 2026 Gamma Software. Tüm hakları saklıdır.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Gamma Software. Tüm hakları saklıdır.</p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Gizlilik</a>
+                <a href="terms-of-service.html">Kullanım Şartları</a>
+                <a href="contact.html">İletişim</a>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
